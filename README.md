@@ -12,7 +12,7 @@ Neurons are interconnected nerve cells that process and transmits electrochemica
 ## Artifical neuron
 
 <p float="left">
-   <img src="./res/artifical_neuron.png">
+   <img src="./res/artifical_neuron.jpg">
 </p>
 
 
