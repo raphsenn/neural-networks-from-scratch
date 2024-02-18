@@ -13,7 +13,7 @@ class Perceptron:
         self.learning_rate = 0.1
         self.threshold = 0
 
-    def __call__(self, x):
+    def __call__(self, x: np.array):
         """
         Compute the output of the perceptron for a given input.
 
@@ -27,7 +27,7 @@ class Perceptron:
             return 1
         return 0
     
-    def train(self, X, y, epochs: int = 1):
+    def train(self, X: np.array, y: np.array, epochs: int = 1):
         """
         Train the perceptron using the provided input-output pairs.
 
@@ -37,7 +37,6 @@ class Perceptron:
 
         """ 
         for _ in range(epochs):
-            np.random.shuffle(X)
             for i, xi in enumerate(X):
                 x = xi[:2]
                 pred = np.dot(x, self.w)
