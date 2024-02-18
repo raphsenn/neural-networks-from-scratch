@@ -38,6 +38,8 @@ Our first application of a single layer neural network are logic gates.
 </p>
 
 ```python
+import numpy as np
+
 class Perceptron:
     """
     A simple single-layer neuronal network (perceptron) of the OR Gate. 
