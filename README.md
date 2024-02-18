@@ -37,10 +37,6 @@ Our first application of a single layer neural network are logic gates.
    <img src="./res/perceptron_OR.jpg">
 </p>
 
-<p float="left">
-   <img src="./res/update_OR.jpg">
-</p>
-
 ```python
 class Perceptron:
     """
@@ -64,4 +60,10 @@ class Perceptron:
                 if pred != y[i]:
                     self.w = self.w + self.learning_rate * (y[i] - pred) * x
 ```
+
+<p float="left">
+   <img src="./res/update_OR.jpg">
+</p>
+
+
 
