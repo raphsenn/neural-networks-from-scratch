@@ -90,6 +90,8 @@ Objects are vectors in d dimension. We have exactly two classes (+1, -1). A line
    <img src="./res/perceptron_linear_classifier.jpg">
 </p>
 
+#### Implementation in Python
+
 ```python
 import numpy as np
 
