@@ -37,6 +37,9 @@ Our first application of a single layer neural network are logic gates.
    <img src="./res/perceptron_OR.jpg">
 </p>
 
+
+#### Implementation in Python
+
 ```python
 import numpy as np
 
@@ -63,9 +66,29 @@ class Perceptron:
                     self.w = self.w + self.learning_rate * (y[i] - pred) * x
 ```
 
+With the training data
+
+```python
+X = np.array([[0, 0], [0, 1], [1, 0], [1, 1]])
+y = np.array([0, 1, 1, 1])
+```
+
 <p float="left">
    <img src="./res/update_OR.jpg">
 </p>
+
+### Linear classifier
+Objects are vectors in d dimension. We have exactly two classes (+1, -1). A linear classifier tries to separate the data points by a (d-1)-dimensional hyperplane.
+
+#### Example for d=2: We try to spearate by a single line.
+
+<p float="left">
+   <img src="./res/perceptron_linear_classifier.jpg">
+</p>
+
+
+
+
 
 
 
