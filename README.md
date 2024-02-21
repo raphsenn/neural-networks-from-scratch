@@ -93,7 +93,7 @@ Objects are vectors in d dimension. We have exactly two classes (+1, -1). A line
 ```python
 import numpy as np
 
-class Neuron:
+class Perceptron:
     def __init__(self):
         self.w = np.zeros(3)
         self.learning_rate = 0.1
