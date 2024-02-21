@@ -86,6 +86,53 @@ Objects are vectors in d dimension. We have exactly two classes (+1, -1). A line
    <img src="./res/perceptron_linear_classifier.jpg">
 </p>
 
+```python
+import numpy as np
+
+class Neuron:
+    def __init__(self):
+        self.w = np.zeros(3)
+        self.learning_rate = 0.1
+        self.bias = np.array([1.0])
+
+    def train(self, X, y, epochs: int = 100):
+        for _ in range(epochs):
+            for i, xi in enumerate(X):
+                x = np.append(self.bias, xi)
+                prediction = np.sign(np.dot(x, self.w))
+                if prediction != y[i]:
+                    if prediction <= 0:
+                        self.w = self.w + self.learning_rate * x
+                    else: 
+                        self.w = self.w - self.learning_rate * x
+```
+
+Create the training data and plot it.
+
+```python
+from matplotlib import pyplot as plt
+# training data 
+X = np.array([[1, 1], [1, 3], [3, 1],[1.8, 4.8], [2, 5], [4, 3], [5, 2]])
+y = np.array([1, 1, 1, 1, -1, -1, -1])
+
+# seperate blue and red points   
+blue_points = X[y == 1] 
+red_points = X[y == -1]
+    
+plt.scatter(blue_points[:, 0], blue_points[:, 1], color='blue', label='Label 1')
+plt.scatter(red_points[:, 0], red_points[:, 1], color='red', label='Label -1')
+   
+plt.xlabel('X1')
+plt.ylabel('X2')
+plt.legend()
+    
+# Create single neuron and train it.
+neuron = Perceptron()
+neuron.train(X, y)
+
+plt.show()
+```
+
 
 
 
