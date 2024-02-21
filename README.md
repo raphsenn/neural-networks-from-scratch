@@ -111,7 +111,7 @@ class Perceptron:
                         self.w = self.w - self.learning_rate * x
 ```
 
-Create the training data and plot it.
+Create the training data, train it and plot.
 
 ```python
 from matplotlib import pyplot as plt
