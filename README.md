@@ -83,6 +83,10 @@ Objects are vectors in d dimension. We have exactly two classes (+1, -1). A line
 #### Example for d=2: We try to spearate by a single line.
 
 <p float="left">
+   <img src="./res/2d_example.jpg">
+</p>
+
+<p float="left">
    <img src="./res/perceptron_linear_classifier.jpg">
 </p>
 
