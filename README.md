@@ -73,10 +73,6 @@ X = np.array([[0, 0], [0, 1], [1, 0], [1, 1]])
 y = np.array([0, 1, 1, 1])
 ```
 
-<p float="left">
-   <img src="./res/update_OR.jpg">
-</p>
-
 ### Linear classifier
 Objects are vectors in d dimension. We have exactly two classes (+1, -1). A linear classifier tries to separate the data points by a (d-1)-dimensional hyperplane.
 
