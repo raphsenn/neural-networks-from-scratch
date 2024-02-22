@@ -87,7 +87,6 @@ plt.show()
 ```
 
 ### Logical gates
-Our first application of a single layer neural network are logic gates.
 
 #### OR Gate
 
@@ -140,8 +139,7 @@ A multilayer perceptron (MLP) is a name for a modern feedforward artificial neur
 
 Modern feedforward networks are trained using the backpropagation method and are colloquially referred to as the "vanilla" neural networks.
 
-
-
+#### Application multilayer artifical neural newtork
 
 
 
