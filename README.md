@@ -22,7 +22,7 @@ If this weighted sum exceeds the threshold, the perceptron will trigger, sending
 
 You can call a perceptron a single-layer neural network.
 
-## Application
+## Application single-layer neural network
 
 ### Logical gates
 Our first application of a single layer neural network are logic gates.
