@@ -139,7 +139,7 @@ A multilayer perceptron (MLP) is a name for a modern feedforward artificial neur
 
 Modern feedforward networks are trained using the backpropagation method and are colloquially referred to as the "vanilla" neural networks.
 
-#### Application multilayer artifical neural newtork
+## Application multilayer artifical neural newtork
 
 
 
