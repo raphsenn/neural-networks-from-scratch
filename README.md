@@ -135,6 +135,12 @@ neuron.train(X, y)
 plt.show()
 ```
 
+## Multilayer perceptron
+A multilayer perceptron (MLP) is a name for a modern feedforward artificial neural network, consisting of fully connected neurons with a nonlinear kind of activation function, organized in at least three layers, notable for being able to distinguish data that is not linearly separable.
+
+Modern feedforward networks are trained using the backpropagation method and are colloquially referred to as the "vanilla" neural networks.
+
+
 
 
 
