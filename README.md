@@ -24,55 +24,6 @@ You can call a perceptron a single-layer neural network.
 
 ## Application single-layer neural network
 
-### Logical gates
-Our first application of a single layer neural network are logic gates.
-
-#### OR Gate
-
-<p float="left">
-   <img src="./res/OR_gate.jpg">
-</p>
-
-<p float="left">
-   <img src="./res/perceptron_OR.jpg">
-</p>
-
-
-#### Implementation in Python
-
-```python
-import numpy as np
-
-class Perceptron:
-    """
-    A simple single-layer neuronal network (perceptron) of the OR Gate. 
-    """
-    def __init__(self):
-        self.w = np.zeros(2)
-        self.learning_rate = 0.1
-        self.threshold = 0
-
-    def __call__(self, x: np.array):
-        if np.dot(x, self.w) > self.threshold:
-            return 1
-        return 0
-    
-    def train(self, X: np.array, y: np.array, epochs: int = 1):
-        for _ in range(epochs):
-            for i, xi in enumerate(X):
-                x = xi[:2]
-                pred = np.dot(x, self.w)
-                if pred != y[i]:
-                    self.w = self.w + self.learning_rate * (y[i] - pred) * x
-```
-
-With the training data
-
-```python
-X = np.array([[0, 0], [0, 1], [1, 0], [1, 1]])
-y = np.array([0, 1, 1, 1])
-```
-
 ### Linear classifier
 Objects are vectors in d dimension. We have exactly two classes (+1, -1). A linear classifier tries to separate the data points by a (d-1)-dimensional hyperplane.
 
@@ -133,6 +84,55 @@ neuron = Perceptron()
 neuron.train(X, y)
 
 plt.show()
+```
+
+### Logical gates
+Our first application of a single layer neural network are logic gates.
+
+#### OR Gate
+
+<p float="left">
+   <img src="./res/OR_gate.jpg">
+</p>
+
+<p float="left">
+   <img src="./res/perceptron_OR.jpg">
+</p>
+
+
+#### Implementation in Python
+
+```python
+import numpy as np
+
+class Perceptron:
+    """
+    A simple single-layer neuronal network (perceptron) of the OR Gate. 
+    """
+    def __init__(self):
+        self.w = np.zeros(2)
+        self.learning_rate = 0.1
+        self.threshold = 0
+
+    def __call__(self, x: np.array):
+        if np.dot(x, self.w) > self.threshold:
+            return 1
+        return 0
+    
+    def train(self, X: np.array, y: np.array, epochs: int = 1):
+        for _ in range(epochs):
+            for i, xi in enumerate(X):
+                x = xi[:2]
+                pred = np.dot(x, self.w)
+                if pred != y[i]:
+                    self.w = self.w + self.learning_rate * (y[i] - pred) * x
+```
+
+With the training data
+
+```python
+X = np.array([[0, 0], [0, 1], [1, 0], [1, 1]])
+y = np.array([0, 1, 1, 1])
 ```
 
 ## Multilayer perceptron
