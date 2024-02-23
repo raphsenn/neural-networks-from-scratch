@@ -63,7 +63,9 @@ class Perceptron:
 Create the training data, train it and plot.
 
 ```python
+import numpy as np
 from matplotlib import pyplot as plt
+
 # training data 
 X = np.array([[1, 1], [1, 3], [3, 1],[1.8, 4.8], [2, 5], [4, 3], [5, 2]])
 y = np.array([1, 1, 1, 1, -1, -1, -1])
@@ -130,6 +132,8 @@ class Perceptron:
 With the training data
 
 ```python
+import numpy as np
+
 X = np.array([[0, 0], [0, 1], [1, 0], [1, 1]])
 y = np.array([0, 1, 1, 1])
 ```
