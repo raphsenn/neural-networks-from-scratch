@@ -13,7 +13,7 @@ There are approximately 100 billion of them inside of us, with each neuron conne
 ## Artifical neuron (Perceptron)
 
 <p float="left">
-   <img src="./res/artifical_neuron.jpg">
+   <img src="./res/perceptron.jpg">
 </p>
 
 A perceptron is an artificial neuron. Instead of electrochemical signals, data is represented as numerical values.
