@@ -93,7 +93,7 @@ plt.show()
 #### OR Gate
 
 <p float="left">
-   <img src="./res/OR_gate.jpg">
+   <img src="./res/or-gate.jpg">
 </p>
 
 <p float="left">
@@ -137,6 +137,19 @@ import numpy as np
 X = np.array([[0, 0], [0, 1], [1, 0], [1, 1]])
 y = np.array([0, 1, 1, 1])
 ```
+#### AND Gate
+
+<p float="left">
+   <img src="./res/and-gate.jpg">
+</p>
+
+
+#### XOR Gate
+
+<p float="left">
+   <img src="./res/xor-gate.jpg">
+</p>
+
 
 ## Multilayer perceptron
 A multilayer perceptron (MLP) is a name for a modern feedforward artificial neural network, consisting of fully connected neurons with a nonlinear kind of activation function, organized in at least three layers, notable for being able to distinguish data that is not linearly separable.
