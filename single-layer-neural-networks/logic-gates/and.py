@@ -53,11 +53,11 @@ class Neuron:
 
 
 if __name__ == '__main__':
-    X = np.array([[0, 0], [0, 1], [1, 0], [1, 1]])
-    y = np.array([0, 1, 1, 1])
-    or_gate = Neuron()
-    or_gate.train(X, y)
-    print(f"OR(0, 0) = {or_gate(np.array([0, 0]))}") 
-    print(f"OR(0, 1) = {or_gate(np.array([0, 1]))}") 
-    print(f"OR(1, 0) = {or_gate(np.array([1, 0]))}") 
-    print(f"OR(1, 1) = {or_gate(np.array([1, 1]))}")
+    X = np.array([[0, 0], [0, 1], [1, 0], [1, 1]]) # training data.
+    y = np.array([0, 0, 0, 1]) # targets.
+    and_gate = Neuron()
+    and_gate.train(X, y)
+    print(f"AND(0, 0) = {and_gate(np.array([0, 0]))}") 
+    print(f"AND(0, 1) = {and_gate(np.array([0, 1]))}") 
+    print(f"AND(1, 0) = {and_gate(np.array([1, 0]))}") 
+    print(f"AND(1, 1) = {and_gate(np.array([1, 1]))}")
