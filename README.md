@@ -33,9 +33,14 @@ Objects are vectors in d dimension. We have exactly two classes (+1, -1). A line
    <img src="./res/2d_example.jpg">
 </p>
 
+
+Our Neural Network should look like this.
 <p float="left">
-   <img src="./res/perceptron_linear_classifier.jpg">
+   <img src="./res/perceptron-linear-classifier.jpg">
 </p>
+
+With the following update rule.
+
 
 #### Implementation in Python
 
