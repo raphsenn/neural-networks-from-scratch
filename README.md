@@ -4,7 +4,7 @@ Learn a little bit about neural networks with raw python.
 ## Biological neuron
 
 <p float="left">
-   <img src="./res/biological_neuron.png">
+   <img src="./res/biological_neuron.jpg">
 </p>
 
 Neurons are interconnected nerve cells that process and transmits electrochemical signals in the brain.
