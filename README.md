@@ -97,7 +97,7 @@ plt.show()
 </p>
 
 <p float="left">
-   <img src="./res/perceptron_OR.jpg">
+   <img src="./res/perceptron-or-gate.jpg">
 </p>
 
 
