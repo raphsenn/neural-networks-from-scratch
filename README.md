@@ -164,6 +164,15 @@ Modern feedforward networks are trained using the backpropagation method and are
 ## Application multilayer artifical neural newtork
 
 
+## Logistic regression as a neural network
+
+### Logistic regression classification
+
+#### Schematic of a logistic regression classifier
+
+<p float="left">
+   <img src="./res/schematic-logistic-regression-classifier.jpg">
+</p>
 
 
 
