@@ -28,7 +28,7 @@ class NN:
 
                 # Back prop.
                 error = y[i] - a
-                grad = x * 2 * error
+                grad = 2 * x * error
                 self.w += learning_rate * grad
 
     def __call__(self, x: float) -> float:
